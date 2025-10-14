@@ -14,7 +14,6 @@
   padding: 0;
   box-sizing: border-box;
 }
-
 body {
   font-family: "Montserrat", "Roboto", Arial, sans-serif;
   line-height: 1.6;
@@ -23,20 +22,17 @@ body {
   min-height: 100vh;
   transition: background 0.3s, color 0.3s;
 }
-
 body.light-theme {
   --bg-gradient: linear-gradient(135deg, #ffffff 0%, #f8f9fa 100%);
   --text-color: var(--light-text);
   --muted-text: var(--light-muted);
   --card-bg: var(--light-card);
 }
-
 .container {
   max-width: 1200px;
   margin: 0 auto;
   padding: 0 20px;
 }
-
 /* Header */
 header {
   background: rgba(20, 20, 20, 0.95);
@@ -207,6 +203,7 @@ body.light-theme .theme-toggle {
   font-size: 3.5rem;
   background: var(--brand-gradient);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: gradientMove 3s infinite alternate;
 }
@@ -214,10 +211,10 @@ body.light-theme .theme-toggle {
 body.light-theme .hero h1 {
   background: linear-gradient(135deg, #007b7f, #b33a3a);
   -webkit-background-clip: text;
+  background-clip: text;
   -webkit-text-fill-color: transparent;
   animation: none;
 }
-
 @keyframes gradientMove {
   0% {
     background-position: 0% 50%;
@@ -226,7 +223,6 @@ body.light-theme .hero h1 {
     background-position: 100% 50%;
   }
 }
-
 .hero p {
   font-size: 1.3rem;
   color: rgba(255, 255, 255, 0.9);
